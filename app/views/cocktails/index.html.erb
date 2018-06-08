@@ -1,0 +1,21 @@
+<%= render 'shared/banner' %>
+<div class="container">
+  <h1>All Cocktails</h1>
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cocktail.photo %>');">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+<%= link_to "Add a cocktail", new_cocktail_path %>
+
