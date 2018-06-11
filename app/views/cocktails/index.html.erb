@@ -1,4 +1,31 @@
 <%= render 'shared/banner' %>
+<div class="ups-container--home">
+      <h2 class="hp__section-heading">
+        <span>Recipes</span>
+      </h2>
+    </div>
+<div class="container">
+  <div class="row">
+<article class="tease tease_horizontal ">
+  <figure class="tease__figure">
+    <a href="" class="tease__image-link">
+      <img src="<%= asset_path("photo_cocktail.jpeg") %>" class="tease__image" scale="0">
+    </a>
+  </figure>
+
+  <div class="tease__text-card-wrapper">
+    <div class="tease__text-card">
+      <div class="tease__post-type">
+      <a href="">Cocktails</a>
+      </div>
+        <h3 class="tease__title"><a href="">Our mixologists' cocktails of the month!</a></h3>
+          <p class="tease__dek">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+    </div>
+  </div>
+</article>
+
 <div class="container">
   <h1>All Cocktails</h1>
   <div class="row">
@@ -18,4 +45,6 @@
   </div>
 </div>
 <%= link_to "Add a cocktail", new_cocktail_path %>
+</div>
+</div>
 
